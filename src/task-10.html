@@ -11,13 +11,14 @@
     <p><a href="index.html">Go back</a></p>
 
     <div id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
+      <input type="number" min="1" max="100" step="1" name="boxCount" aria-label="Number of boxes to create" />
+      <button type="button" data-create aria-label="Create boxes">Create</button>
+      <button type="button" data-destroy aria-label="Destroy all boxes">Destroy</button>
     </div>
-
-    <div id="boxes"></div>
-
+    
+    <div id="boxes" aria-live="polite"></div>
+    
+  
     <script src="js/task-10.js" type="module"></script>
   </body>
 </html>
